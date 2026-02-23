@@ -1,0 +1,42 @@
+.booking-layout {
+  display: grid; grid-template-columns: 1fr 360px;
+  gap: 40px; padding: 40px 24px 80px; align-items: start;
+}
+.booking-section-card {
+  background: var(--dark-2); border: 1px solid #2a2a2a;
+  border-radius: var(--radius-lg); padding: 28px; margin-bottom: 20px;
+}
+.booking-section-title { font-size: 1.1rem; margin-bottom: 20px; font-family: 'Playfair Display', serif; color: var(--gold); }
+.booking-hotel-preview { display: flex; gap: 20px; }
+.booking-hotel-preview img { width: 120px; height: 90px; object-fit: cover; border-radius: var(--radius); flex-shrink: 0; }
+.booking-hotel-location { font-size: 0.75rem; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 4px; }
+.booking-hotel-name { font-size: 1.1rem; font-family: 'Playfair Display', serif; margin-bottom: 4px; }
+.booking-room-name { color: #888; font-size: 0.88rem; }
+.booking-dates-grid { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; margin-bottom: 16px; }
+.booking-date-item { background: var(--dark-3); border-radius: var(--radius); padding: 14px; }
+.booking-date-label { display: block; font-size: 0.7rem; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
+.booking-date-value { font-size: 0.88rem; font-weight: 600; }
+.booking-date-arrow { color: #555; font-size: 1.2rem; text-align: center; }
+.booking-meta-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.booking-policies { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.booking-policies li { font-size: 0.88rem; color: #999; padding-left: 4px; }
+
+/* SUMMARY */
+.booking-summary-card {
+  background: var(--dark-2); border: 1px solid #2a2a2a;
+  border-radius: var(--radius-lg); padding: 28px; position: sticky; top: 90px;
+}
+.booking-room-img { width: 100%; border-radius: var(--radius); margin-bottom: 20px; aspect-ratio: 16/9; object-fit: cover; }
+.price-breakdown { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+.price-row { display: flex; justify-content: space-between; font-size: 0.88rem; color: #aaa; }
+.price-row--service { color: #555; }
+.price-row--total { font-size: 1.15rem; font-weight: 700; color: white; }
+
+@media (max-width: 900px) {
+  .booking-layout { grid-template-columns: 1fr; }
+  .booking-summary-card { position: static; }
+}
+@media (max-width: 600px) {
+  .booking-dates-grid { grid-template-columns: 1fr; }
+  .booking-date-arrow { display: none; }
+}
