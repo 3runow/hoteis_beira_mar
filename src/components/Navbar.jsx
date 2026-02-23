@@ -36,8 +36,12 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
         <Link to="/" className="navbar__logo">
-          <span className="navbar__logo-icon">✦</span>
-          Beira Mar
+          <svg className="navbar__logo-wave" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M2 8 Q7 2 13 8 Q19 14 25 8 Q31 2 37 8" stroke="#3d9e72" strokeWidth="3" strokeLinecap="round" fill="none"/>
+            <path d="M2 16 Q7 10 13 16 Q19 22 25 16 Q31 10 37 16" stroke="#3d9e72" strokeWidth="3" strokeLinecap="round" fill="none"/>
+            <path d="M2 24 Q7 18 13 24 Q19 30 25 24 Q31 18 37 24" stroke="#3d9e72" strokeWidth="3" strokeLinecap="round" fill="none"/>
+          </svg>
+          Beira Mar Hotéis
         </Link>
 
         <div className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
