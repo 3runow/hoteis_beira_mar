@@ -56,6 +56,14 @@
 
 @media (max-width: 1200px) { .admin-stats { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 768px) {
+  .admin-body { padding: 28px 16px 56px; }
   .admin-stats { grid-template-columns: repeat(2, 1fr); }
   .admin-hotels-grid { grid-template-columns: 1fr; }
+  .admin-tab { font-size: 0.9rem; padding: 11px 12px; }
+}
+
+@media (max-width: 560px) {
+  .admin-stats { grid-template-columns: 1fr; }
+  .admin-filter-row { flex-direction: column; align-items: flex-start; }
+  .admin-tab { width: 100%; text-align: left; }
 }

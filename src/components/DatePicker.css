@@ -201,3 +201,10 @@
   color: #666;
 }
 .dp-clear-btn:hover { background: #333; color: #aaa; }
+
+@media (max-width: 480px) {
+  .dp-calendar {
+    width: min(302px, calc(100vw - 16px));
+    padding: 16px;
+  }
+}
